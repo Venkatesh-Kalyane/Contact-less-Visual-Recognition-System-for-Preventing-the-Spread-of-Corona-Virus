@@ -271,8 +271,7 @@ model = load_model('model-002.model')
 
 face_clsfr=cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
-source=cv2.VideoCapture(0)
-#C:/Users/Default/Pictures/Camera Roll
+source=cv2.VideoCapture('https://192.168.43.1:8080/video')
 
 labels_dict={0:'MASK',1:'NO MASK'}
 color_dict={0:(0,255,0),1:(0,0,255)}
