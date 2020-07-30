@@ -30,8 +30,6 @@ from sklearn.metrics import f1_score
 from sklearn.utils import shuffle
 import imutils
 import numpy as np
-import matplotlib.pyplot as plt
-import matplotlib.image  as mpimg
 
 
 # In[3]:
