@@ -271,6 +271,7 @@ model = load_model('model-002.model')
 
 face_clsfr=cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
+#Mention ('ip address of camera'/video) inside VideoCapture function
 source=cv2.VideoCapture('https://192.168.43.1:8080/video')
 
 labels_dict={0:'MASK',1:'NO MASK'}
