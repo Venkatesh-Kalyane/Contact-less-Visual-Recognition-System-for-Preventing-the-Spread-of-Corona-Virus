@@ -225,35 +225,10 @@ history=model.fit(train_data,train_target,epochs=30,callbacks=[checkpoint],valid
 # In[17]:
 
 
-from matplotlib import pyplot as plt
-
-plt.plot(history.history['loss'],'r',label='training loss')
-plt.plot(history.history['val_loss'],label='validation loss')
-plt.xlabel('# epochs')
-plt.ylabel('loss')
-plt.legend()
-plt.show()
-
-
-# In[18]:
-
-
-from matplotlib import pyplot as plt
-plt.plot(history.history['acc'],'r',label='training accuracy')
-plt.plot(history.history['val_acc'],label='validation accuracy')
-plt.xlabel('# epochs')
-plt.ylabel('loss')
-plt.legend()
-plt.show()
-
-
-# In[19]:
-
-
 print(model.evaluate(test_data,test_target))
 
 
-# In[20]:
+# In[18]:
 
 
 from keras.models import load_model
@@ -261,7 +236,7 @@ import cv2
 import numpy as np
 
 
-# In[21]:
+# In[19]:
 
 
 print(os.getcwd())
@@ -271,14 +246,14 @@ model = load_model('model-002.model')
 
 face_clsfr=cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
-#Mention ('ip address of camera'/video) inside VideoCapture function
+#Mention ('ip address of camera OR CCTV'/video) inside VideoCapture function
 source=cv2.VideoCapture('https://192.168.43.1:8080/video')
 
 labels_dict={0:'MASK',1:'NO MASK'}
 color_dict={0:(0,255,0),1:(0,0,255)}
 
 
-# In[22]:
+# In[20]:
 
 
 while(True):
@@ -310,10 +285,6 @@ while(True):
         
 cv2.destroyAllWindows()
 source.release()
-
-
-# In[ ]:
-
 
 
 
