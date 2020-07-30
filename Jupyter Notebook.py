@@ -12,24 +12,17 @@ get_ipython().system('pip install imutils')
 
 
 import os
+import cv2
+import imutils
 import zipfile
-import random
-import shutil
-import tensorflow as tf
-from tensorflow.keras.optimizers import RMSprop
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
-from shutil import copyfile
+import numpy as np
 from os import getcwd
 from os import listdir
-import cv2
+import tensorflow as tf
+from sklearn.model_selection import train_test_split
 from tensorflow.keras.layers import Conv2D, Input, ZeroPadding2D, BatchNormalization, Activation, MaxPooling2D, Flatten, Dense
 from tensorflow.keras.models import Model, load_model
 from tensorflow.keras.callbacks import TensorBoard, ModelCheckpoint
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import f1_score
-from sklearn.utils import shuffle
-import imutils
-import numpy as np
 
 
 # In[3]:
