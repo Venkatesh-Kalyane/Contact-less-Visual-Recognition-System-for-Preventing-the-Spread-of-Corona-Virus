@@ -21,9 +21,6 @@ The proposed system can be implemented with Camera/CCTVs having public ip addres
 The benefitted audience includes normal and professional people i.e. students, employees, citizens of all ages, small scale and large scale industries.
 
 
-5.Output Video Links:
 
-1. With Normal Camera:https://youtu.be/0Zm2_6KnFik
-2. With Infrared Camera:https://youtu.be/mPFfEfabFtc
 
 
